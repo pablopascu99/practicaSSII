@@ -35,13 +35,18 @@ for page in range(len(df.index)):
         tags=""
         for childEtiquetas in childrenEtiquetas:
             tags = tags + childEtiquetas.text + "|"
+        #La fecha esta en formato ISO
+        if i.find("a", {"id": "article_date_p"}) is not None:
+            fecha = i.find('a', id="article_date_p").attrs['data-date']
+        if i.find("a", {"id": "article_date_u"}) is not None:
+            fecha = i.find('a', id="article_date_u").attrs['data-date']
         componentes = {
             'titulo' : i.find('h1', {'class': 'a_t'}).text,
             'entradilla' : i.find('h2', {'class':'a_st'}).text,
             'texto' : texto,
             'etiquetas' : tags,
-            'fecha' : i.find('a', {'id':'article_date_p'})
+            'fecha' : fecha,
         }
         allNoticas.append(componentes)
 dfNoticias = pd.DataFrame(allNoticas)
-print(dfNoticias.at[2,'etiquetas'])
+print(dfNoticias)
