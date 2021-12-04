@@ -30,9 +30,11 @@ for link in range(len(listaURLsElPais)):
         # Cogemos el cada noticia mediante su url
         noticia = requests.get(pages[page], headers = headers)
         soupNoticia = BeautifulSoup(noticia.text, 'html.parser')
-        # Cogemos todas las etiquetas con clase a _g _g-lg _g-o, que son las que nos interesan
-        # porque tienen los campos que queremos de cada noticia
+        # Agrupamos todo en un try/except puesto que hay noticias totalmente diferentes y 
+        # puesto que son 1/2 como mucho no nos suponen un gran problema
         try:
+            # Cogemos todas las etiquetas con clase a _g _g-lg _g-o, que son las que nos interesan
+            # porque tienen los campos que queremos de cada noticia
             contenido = soupNoticia.find_all('article', {'class': 'a _g _g-lg _g-o' })
             noticiaCampos=[]
             # Cogemos la estructura que abarca el campo de texto
