@@ -59,15 +59,14 @@ for link in range(len(listaURLs20min)):
                     tags = "Noticia sin etiquetas"
             if estructuraEtiquetas is None:
                 tags = "Noticia sin etiquetas"
-            regexTag = re('[^\s].+\n', "", tags)
-            print(regexTag)
+            
+            print(tags)
 
             #Cogemos la fecha de cada noticia
             estructuraDate = soupNoticia.find('span', {'class':'article-date'}).text
             regExDate1 = re.sub('\s-.*', "", estructuraDate)
             regExDate2 = re.sub('\.', "-", regExDate1)
             print("Fecha: " + regExDate2)
-
 
         except:
             contenido=""

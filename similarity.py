@@ -5,7 +5,7 @@ class similarity():
     def initSimilarity(self):
         self.similarity = []
         self.lineTexto.setReadOnly(True)
-        self.openNoticiaSim.clicked.connect(self.getTextFile)
+        self.openNoticiaSim.clicked.connect(self.printsuma)
 
     def pruebaBoton(self):
         self.showNoticiaSim.setText("Holaaa")
