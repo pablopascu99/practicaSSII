@@ -46,7 +46,7 @@ def tfidf_docs (docA, docB):
 
     # Como vemos obtenemos las palabras de los dos documentos pero desordenadas y repetidas una sola vez.
     tabla = set(bagA).union(set(bagB))
-
+    print(tabla)
     # Observamos que ahora si que obtenemos los vectores (repeticiones de las palabras de cada doc), 
     # las repeticiones dependerá de cada documento, no es habitual que tengan las mismas.
     palabrasA = dict.fromkeys(tabla, 0)

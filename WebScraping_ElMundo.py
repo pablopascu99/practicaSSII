@@ -66,7 +66,7 @@ def getFieldsFromPages (listaURLs):
                     try:
                         childrenEtiquetas = estructuraEtiquetas.findChildren("li" , recursive=False)
                         for childEtiquetas in childrenEtiquetas:
-                            tags = tags + childEtiquetas.text + "|"
+                            tags = tags + childEtiquetas.text + " | "
                     except: 
                         tags = "Noticia sin etiquetas"
                 if estructuraEtiquetas is None:

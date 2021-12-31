@@ -51,7 +51,7 @@ for link in range(len(listaURLsElPais)):
             childrenEtiquetas = estructuraEtiquetas.findChildren("li" , recursive=False)
             tags=""
             for childEtiquetas in childrenEtiquetas:
-                tags = tags + childEtiquetas.text + "|"
+                tags = tags + childEtiquetas.text + " | "
             # Hay dos estructuras posibles en las fechas por lo que tenemos que 
             # tener en cuenta ambos casos
             if soupNoticia.find("a", {"id": "article_date_p"}) is not None:
