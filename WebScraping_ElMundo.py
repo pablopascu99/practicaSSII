@@ -53,12 +53,15 @@ def getFieldsFromPages (listaURLs):
                 except: 
                     entradilla = "Noticia sin entradilla"
                 # cogemos el field para coger el texto
-                estructuraTexto = soupNoticia.find('div', {'class': 'ue-l-article__body ue-c-article__body'})
-                # Cogemos los p de la estructura de texto que conformaran todo el texto que necesitamos
-                childrenTexto = estructuraTexto.findChildren("p" , recursive=False)
-                texto=""
-                for childTexto in childrenTexto:
-                    texto = texto + childTexto.text
+                try: 
+                    estructuraTexto = soupNoticia.find('div', {'class': 'ue-l-article__body ue-c-article__body'})
+                    # Cogemos los p de la estructura de texto que conformaran todo el texto que necesitamos
+                    childrenTexto = estructuraTexto.findChildren("p" , recursive=False)
+                    texto=""
+                    for childTexto in childrenTexto:
+                        texto = texto + childTexto.text
+                except: 
+                    testo = "Noticia premium, sin texto"
                 # Cogemos las etiquetas
                 estructuraEtiquetas = soupNoticia.find('ul', {'class' : 'ue-c-article__tags'})
                 tags=""
@@ -82,6 +85,7 @@ def getFieldsFromPages (listaURLs):
             file.write(noticiaElMundo)
             file.close()
             cont=cont+1
+            #print(noticiaElMundo)
 
 # llamamos a la funcion con nuestra lista de enlaces creadas
 noticiasElMundo = getFieldsFromPages(listaURLsElMundo)

@@ -81,10 +81,10 @@ def tfidf_files (path):
 
 # Creamos los dos documentos con los ficheros de noticias extraidos del Mundo, 
 # lo abrimos cogemos el texto y lo cerramos
-fileA = open("./ElMundo/salud/ElMundo_salud_2021-12-01_49.txt", 'r', encoding="utf-8")
+fileA = open("./ElMundo/salud/ElMundo_salud_2021-12-27_46.txt", 'r', encoding="utf-8")
 docA = fileA.read()
 fileA.close()
-fileB = open("./ElMundo/salud/ElMundo_salud_2021-12-01_50.txt", 'r', encoding="utf-8")
+fileB = open("./ElMundo/salud/ElMundo_salud_2021-12-27_47.txt", 'r', encoding="utf-8")
 docB = fileB.read()
 fileB.close()
 
@@ -102,4 +102,4 @@ for root, folders, files in os.walk(data_ElMundo_salud):
 tfidf_docs(docA, docB)
 
 # llamamos a la funcion para calcular el TF IDF de todos los docs del path salud de El Mundo
-tfidf_files(data)
+#tfidf_files(data)
