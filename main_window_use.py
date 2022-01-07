@@ -10,9 +10,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow, similarity):
         self.initSimilarity()
         self.setWindowIcon(QtGui.QIcon('./img/periodico.png'))
         self.setWindowTitle("Busquedas y recomendaciones")
-        self.textEdit.setReadOnly(True)
+        self.textos.setReadOnly(True)
         self.botonbuscar.clicked.connect(self.obtainText)
-        self.pushButton_3.clicked.connect(self.abrirCarpeta)
         self.app = app
 
     def obtainText (self):

@@ -26,6 +26,7 @@ for link in range(len(listaURLs20min)):
         noticia = url.find('a')['href']
         urls.append(noticia)
 
+    contador = 1
     #Mediante un for iteramos entre cada url de noticia
     for page in range(len(urls)):
 
@@ -39,16 +40,16 @@ for link in range(len(listaURLs20min)):
 
             #Primero obtenemos el titulo de las noticias
             estructuraTitulo = soupNoticia.find('h1', {'class':'article-title'}).text
-            print("Titulo: " + estructuraTitulo)
 
             #Cogeremos ahora el texto de los diferentes noticias
             #para ello filtraremos mas de cerca lo que necesitamos
             #posteriormente cogeremos los diferentes parrafos de las noticias
             estructuraTexto = soupNoticia.find('div', {'class':'article-text'}).text
 
-            ####TERMINAR ESTO ABAJO LO DE LOS HIJOS
+            #Extraemos los tags de las diferentes noticias
             estructuraEtiquetas = soupNoticia.find('div', {'class' : 'module module-related'})
             tags=""
+            tagsfinal=" "
             if estructuraEtiquetas is not None:
                 try:
                     childrenEtiquetas = estructuraEtiquetas.findChildren("ul" , recursive=False)
@@ -60,13 +61,23 @@ for link in range(len(listaURLs20min)):
             if estructuraEtiquetas is None:
                 tags = "Noticia sin etiquetas"
             
-            print(tags)
+            tags2 = re.findall('[^\s].+', tags)
+            #Convertimos el output en string para la escritura en el archivo de texto  
+            estructuraTags = tagsfinal.join(tags2)
 
             #Cogemos la fecha de cada noticia
-            estructuraDate = soupNoticia.find('span', {'class':'article-date'}).text
-            regExDate1 = re.sub('\s-.*', "", estructuraDate)
-            regExDate2 = re.sub('\.', "-", regExDate1)
-            print("Fecha: " + regExDate2)
+            date = soupNoticia.find('span', {'class':'article-date'}).text
+            regExDate1 = re.sub('\s-.*', "", date)
+            estructuraDates = re.sub('\.', "-", regExDate1)
+
+            #Creamos los diferentes txt separados por cada noticia
+            noticia20min = estructuraTitulo + "\n######\n" + "\n######\n" + estructuraDates
+            delDir = re.sub('.*noticias/', "", listaURLs20min[link])
+
+            file = open("./20Min/" + delDir + "/20Min_" + delDir + "_" + estructuraDates + "_" + str(contador) + ".txt", "w", encoding="utf-8")
+            file.write(noticia20min)
+            file.close()
+            contador = contador+1
 
         except:
             contenido=""
