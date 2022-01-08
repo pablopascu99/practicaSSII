@@ -1,5 +1,5 @@
 from main_window import *
-from similarity import *
+from similarity_window import *
 from PyQt5.QtWidgets import QFileDialog
 import os
 
