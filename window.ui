@@ -30,7 +30,7 @@
     <item row="0" column="0">
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="search">
        <attribute name="title">
@@ -70,7 +70,11 @@
                   </widget>
                  </item>
                  <item>
-                  <widget class="QSpinBox" name="nranking"/>
+                  <widget class="QSpinBox" name="nranking">
+                   <property name="value">
+                    <number>5</number>
+                   </property>
+                  </widget>
                  </item>
                 </layout>
                </item>
@@ -84,7 +88,23 @@
                   </widget>
                  </item>
                  <item>
-                  <widget class="QComboBox" name="comboBox"/>
+                  <widget class="QComboBox" name="comboBox">
+                   <item>
+                    <property name="text">
+                     <string>ElPais</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>20Minutos</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>ElMundo</string>
+                    </property>
+                   </item>
+                  </widget>
                  </item>
                 </layout>
                </item>
@@ -107,15 +127,12 @@
                 </widget>
                </item>
                <item>
-                <widget class="QLineEdit" name="lineEdit_2"/>
-               </item>
-               <item>
                 <widget class="QTextEdit" name="filtros">
-                 <property name="markdown">
-                  <string/>
-                 </property>
                  <property name="placeholderText">
                   <string>Escriba la consulta que desee realizar.</string>
+                 </property>
+                 <property name="markdown" stdset="0">
+                  <string/>
                  </property>
                 </widget>
                </item>
@@ -173,32 +190,7 @@
                </layout>
               </item>
               <item>
-               <widget class="QTableView" name="ranking">
-                <property name="sizeAdjustPolicy">
-                 <enum>QAbstractScrollArea::AdjustToContents</enum>
-                </property>
-                <property name="editTriggers">
-                 <set>QAbstractItemView::NoEditTriggers</set>
-                </property>
-                <property name="alternatingRowColors">
-                 <bool>true</bool>
-                </property>
-                <property name="textElideMode">
-                 <enum>Qt::ElideNone</enum>
-                </property>
-                <attribute name="horizontalHeaderCascadingSectionResizes">
-                 <bool>true</bool>
-                </attribute>
-                <attribute name="horizontalHeaderMinimumSectionSize">
-                 <number>0</number>
-                </attribute>
-                <attribute name="horizontalHeaderDefaultSectionSize">
-                 <number>200</number>
-                </attribute>
-                <attribute name="horizontalHeaderStretchLastSection">
-                 <bool>true</bool>
-                </attribute>
-               </widget>
+               <widget class="QTableWidget" name="tableWidget"/>
               </item>
              </layout>
             </item>
