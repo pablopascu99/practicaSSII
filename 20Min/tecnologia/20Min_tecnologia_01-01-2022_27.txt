@@ -1,0 +1,12 @@
+Desarrollan una Inteligencia Artificial que detecta deepfakes a través del brillo de los ojos
+######
+
+Las mejoras en tecnología han permitido que sea más sencillo engañar a los usuarios con deepfake y alimentar algunos bulos. Sin embargo, a la par que estas herramientas evolucionan, también lo hacen los sistemas que ayudan a detectar cuando el vídeo de una persona es falso.Unos investigadores de la Universidad de Buffalo han desarrollado una Inteligencia Artificial (IA) que avisa cuando un vídeo es real y cuando no lo es. Para llevar a cabo su análisis, la tecnología del estudio se centra en los ojos.Según se ha podido comprobar en las pruebas de este sistema de detección de deepfakes, a través del análisis de las córneas, la herramienta logra un 94% de éxito. Con el objetivo de conseguir este porcentaje, los investigadores se basaron en que, cuando las personas se graban, los ojos adquieren un brillo al recibir iluminación externa.
+
+
+La IA detecta el falso brillo en los ojos de las deepfake del auténtico.Lyu et. al
+Mediante la creación de la IA, se ha descubierto que el brillo en los ojos no sucede de la misma manera en los deepfake. A pesar de que esta técnica trate de imitar la iluminación que se refleja en los ojos, esta suele ser demasiado perfectas o extrañas en comparación con la que se forma de manera natural.Por lo general, la diferencia entre la luz reflejada en la córnea de una imagen real y un deepfake es imperceptible para un humano a simple vista. Sin embargo, con la Inteligencia Artificial de la Universidad de Buffalo, este proceso es más sencillo.A pesar de que esta tecnología sea mucho más efectiva que otros métodos, sigue teniendo puntos débiles. Uno de ellos consiste en que, para hacer un buen análisis, el sistema debe disponer de un vídeo o una imagen nítida.Por otro lado, la IA también necesita que el rostro mire directamente a la cámara y se vean los dos ojos. De lo contrario, el programa no funciona correctamente.Apúntate a nuestra newsletter y recibe en tu correo las últimas noticias sobre tecnología.
+######
+Inteligencia artificial Ojos Bulos Tech Deepfake
+######
+01-01-2022

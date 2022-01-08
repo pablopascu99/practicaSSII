@@ -1,0 +1,40 @@
+La Universitat Oberta de Catalunya vuelve a la normalidad tras el ataque de ransomware que había dañado los servidores centrales de su Campus Virtual
+######
+
+Los servidores centrales de la Universitat Oberta de Catalunya (UOC) sufrió ayer un ciberataque, según ha informado la institución. La Agencia Catalana de Noticia notificó que los presuntos atacantes habían enviado unos datos para que la universidad negociase con ellos, pero el centro ha descartado ofrecer una respuesta.
+
+
+
+
+
+
+
+
+
+
+
+Panasonic reconoce que ha estado 'hackeada' durante cinco meses y que se han filtrado datos de la compañía
+
+
+
+En un inicio, la UOC creía que su plataforma había sufrido un problema técnico, pero, más adelante, se conoció que se trataba de un ataque de tipo ransomware. Los cibercriminales habían limitado el acceso a ciertas partes del sistema online y querían que la universidad se pusiese en contacto con ellos para, posiblemente, pedir un rescate.El centro aseguró que la incidencia se arreglaría en pocas horas y, en alrededor de 20 horas, han recuperado el acceso al Camus Virtual. Según detalla El Nacional, la universidad ha otorgado “flexibilidad en las entregas previstas para este domingo” a sus estudiantes.⚠️ Estem treballant per resoldre una incidència tecnològica que no permet l’accés al Campus Virtual, amb la previsió de restablir-lo al llarg de les properes hores. 🤝 Els estudiants afectats per lliuraments de PAC tindreu flexibilitat en els lliuraments previstos per avui. pic.twitter.com/HZIsWParpJ— UOCuniversitat (@UOCuniversitat) January 2, 2022 La universidad ha tranquilizado a los usuarios implicados afirmando que los datos personales no habían sido robados.El ataque informático de otra universidad catalana
+
+
+
+
+
+
+
+
+
+
+
+Fatídico hackeo al sistema sanitario de Brasil: borran todos los datos de vacunación tras anunciarse el pasaporte COVID obligatorio
+
+
+
+Esta no ha sido la primera vez que una universidad catalana es víctima de un ciberataque en los últimos meses: la Universitat Autónoma de Barcelona (UAB) también sufrió un ataque el pasado mes de octubre.En el caso de la UAB, el suceso fue más problemático, ya que se vieron afectados más de 650.000 carpetas y ficheros. Jordi Hernández, comisionado del rector para las Tecnologías de la Información y la Comunicación de la universidad, explicó que los servicios informáticos ya habían tenido incidentes otras veces, pero nunca tan graves.La Generalitat destinó 3,7 millones de euros para que la UAB se recuperase de los daños causados por el ataque informático. Los expertos de la universidad optaron por reconstruir los sistemas de cero y, en un mes, recuperaron parte de su actividad informática.Apúntate a nuestra newsletter y recibe en tu correo las últimas noticias sobre tecnología.
+######
+Catalunya Universitat Autònoma de Barcelona (UAB) Ciberseguridad Ransomware Ciberataque Servidores Barcelona
+######
+03-01-2022

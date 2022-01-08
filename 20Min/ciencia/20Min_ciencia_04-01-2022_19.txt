@@ -1,0 +1,40 @@
+Un estudio apunta que una proteína del SARS-CoV-2 podría acelerar la aparición del Parkinson
+######
+
+Un estudio de la Universidad de Twente (Países Bajos) ha demostrado que, al menos en el tubo de ensayo, la proteína N del SARS-CoV-2 interactúa con una proteína neuronal llamada a-sinucleína y acelera la formación de fibrillas amiloides, haces de proteínas patológicas que están implicadas en la enfermedad de Parkinson.
+
+
+
+
+
+
+
+
+
+
+
+Qué nuevos síntomas presenta ómicron y cuáles son las consecuencias de pasar el covid con esta cepa
+
+
+
+Además de los síntomas respiratorios, el SARS-CoV-2 puede causar problemas neurológicos, como pérdida de olfato, dolores de cabeza y "niebla cerebral". Sin embargo, sigue siendo controvertido si estos síntomas son causados por la entrada del virus en el cerebro o si, por el contrario, son causados por señales químicas liberadas en el cerebro por el sistema inmunitario en respuesta al virus.En la enfermedad de Parkinson, una proteína llamada a-sinucleína forma fibrillas amiloides anormales, lo que conduce a la muerte de las neuronas productoras de dopamina en el cerebro. Curiosamente, la pérdida de olfato es un síntoma premotor común en la enfermedad de Parkinson.Este hecho, así como los casos de Parkinson en pacientes con COVID-19, hizo que los científicos Christian Blum, Mireille Claessens y sus colegas se preguntaran si los componentes proteicos del SARS-CoV-2 podrían desencadenar la agregación de a-sinucleína en amiloide.Decidieron estudiar las dos proteínas más abundantes del virus: la proteína de la espiga (S-), que ayuda al SARS-CoV-2 a entrar en las células, y la proteína de la nucleocápside (N-), que encapsula el genoma de ARN dentro del virus.Una sonda fluorescenteEn experimentos en tubos de ensayo, publicados en la revista 'ACS Chemical Neuroscience', los investigadores utilizaron una sonda fluorescente que se une a las fibrillas amiloides para demostrar que, en ausencia de las proteínas del coronavirus, la a-sinucleína necesitaba más de 240 horas para agregarse en fibrillas. La adición de la proteína S no tuvo ningún efecto, pero la proteína N redujo el tiempo de agregación a menos de 24 horas.
+
+
+
+
+
+
+
+
+
+
+
+Mueren con seis días de diferencia los hermanos Bogdanoff, los gemelos más famosos de Francia
+
+
+
+En otros experimentos, el equipo demostró que las proteínas N y a-sinucleína interactúan directamente, en parte a través de sus cargas electrostáticas opuestas, con al menos 3-4 copias de a-sinucleína unidas a cada proteína N.A continuación, los investigadores inyectaron la proteína N y la a-sinucleína marcada con fluorescencia en un modelo celular de la enfermedad de Parkinson, utilizando una concentración de proteína N similar a la que se esperaría dentro de una célula infectada por el SARS-CoV-2.En comparación con las células de control a las que sólo se les inyectó a-sinucleína, aproximadamente el doble de células murieron al inyectar ambas proteínas. Además, la distribución de la a-sinucleína se alteró en las células coinyectadas con ambas proteínas, y se observaron estructuras alargadas, aunque los investigadores no pudieron confirmar que fueran amiloides.Se desconoce si estas interacciones también ocurren dentro de las neuronas del cerebro humano, pero de ser así, podrían ayudar a explicar el posible vínculo entre la infección por COVID-19 y la enfermedad de Parkinson.
+######
+Párkinson Cerebro Noticias Síntomas Covid-19 Coronavirus en España Virus respiratorios Proteínas Sistema inmunitario Breaking News
+######
+04-01-2022
