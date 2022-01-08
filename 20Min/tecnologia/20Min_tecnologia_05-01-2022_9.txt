@@ -1,0 +1,88 @@
+Estos son los portátiles que se han presentado en el CES 2022: modelos y características
+######
+
+Hoy ha arrancado el CES 2022, la cita más internacional del sector tecnológico que tendrá lugar en Las Vegas hasta el próximo 7 de enero. A pesar de las bajas en la asistencia de algunas empresas a causa del aumento de contagios por Ómicron, ya se han presentado los productos más innovadores. En esta noticia hemos recogido los últimos modelos de portátiles que se han presentado en la feria.
+
+
+
+
+
+
+
+
+
+
+
+L'Oréal revela su producto estrella para el CES: un dispositivo que tiñe tu cabello como si fueses a la peluquería
+
+
+
+ACER● Predator Triton 500 SE: Cuenta con el procesador Intel Core i9-12900HK y el nuevo chip gráfico RTX 3080 Ti de Nvidia. Posee 32 GB de RAM DDR5 con una velocidad de 5200 MHz. Además, admite hasta 2 TB de almacenamiento PCIe 4.0.● Nitro 5: Se puede configurar con los procesadores AMD Ryzen 6000-series, Intel 12th Gen Core i7-12700H y  Nvidia RTX 3070 Ti.  Posee 32 GB de memoria DDR5 con una frecuencia de 4800 MHz y tiene dos ranuras M.2 PCIe 4.0.● Predator Helios 300: Puede albergar Intel Core i9-12900H y el chip gráfico RTX 3080 de Nvidia. Admite hasta 32 GB de memoria DDR5 con una frecuencia de 4800 MHz y permite hasta 2 TB de almacenamiento PCIe 4.0 M.2 en RAID 0.ALIENWARE
+
+
+
+
+
+
+
+
+
+
+
+Así es el extraño monitor cuadrado que LG Display planea presentar en la feria CES 2022
+
+
+
+● Alienware X14, X15 y X17: Permiten el procesador Intel Core i7-12900H y Nvidia RTX 3080 Ti. El X14 y el X15 se pueden configurar con hasta 32 GB de RAM DDR5 con una frecuencia de 5200 MHz, por otro lado, X17 admite hasta 32 GB de RAM DDR5 con una velocidad de 4,800 MHz,Respecto al almacenamiento, el X14 tiene una única ranura M.2 que admite hasta 2 TB, mientras que Alienware ofrece configuraciones de almacenamiento único o doble para el X15 y X17 que permiten hasta 2 TB o 4 TB de almacenamiento NVMe.● Alienware M17 R5 Ryzen Edition: Cuenta con el procesador Ryzen 9 6980HX de AMD y los gráficos Radeon RX 6850M XT de AMD. En términos de memoria RAM, admite hasta 64 GB de memoria DDR5 con una frecuencia de 4800 MHz. Viene en configuraciones de almacenamiento único o dual, cada una de las cuales admite hasta 4 TB de almacenamiento.ASUS● ROG Zephyrus G14: Posee el procesador Ryzen 9 6900 HS y el chip gráfico Radeon RX 6800S de AMD. Admite hasta 32 GB de memoria DDR5 rápida con frecuencia una de 4800 MH.  Puede usar SSD de tamaño PCIe 4.0 M.2 2280, aunque tiene una ranura de 1 TB como máximo.
+
+
+
+
+
+
+
+
+
+
+
+Este trono reclinable con descomunal pantalla y masajes tiene todas las papeletas para ser lo más jugoso del CES 2022
+
+
+
+● ROG Zephyrus G15: Tiene el procesador Ryzen 9 6900 HS de AMD que es compatible con el nuevo RTX 3080 Ti de Nvidia. Admite hasta 32 GB de memoria DDR5 rápida con frecuencia una de 4800 MH.  Puede usar SSD de tamaño PCIe 4.0 M.2 2280, aunque tiene una ranura de 1 TB como máximo, además, presenta dos ranuras con soporte RAID 0.● ROG Flow X13: Se puede configurar con el procesador Ryzen 9 6980 HS de AMD y el chip gráfico RTX 3050 Ti. Posee el conector XG Mobile que le permite conectarse a la carcasa de la GPU externa de Asus para alimentar el portátil con gráficos mejorados. Este modelo incluye 32 GB de memoria DDR5 de 6400 MHz, con soporte para hasta 1 TB de almacenamiento PCIe 4.0 de tamaño M.2 2230.● ROG Flow Z13: Se puede configurar con un procesador Intel Core i9-12900H y hasta un RTX 3050 Ti en el departamento de gráficos. Admite hasta 32 GB de memoria DDR5 con una velocidad de 5200 MHz.● ROG Zephyrus Duo 16: Posee dos pantallas (una con una relación de aspecto tradicional de 16 pulgadas y la otra con un panel táctil de 14 pulgadas), asimismo, se puede configurar con el procesador Ryzen 9 6900HX de AMD y los gráficos RTX 3080 Ti de Nvidia. Dicho portátil tiene dos ranuras M.2 PCIe 4.0 accesibles y admite hasta 2 TB con RAID 0.GIGABYTE
+
+
+
+
+
+
+
+
+
+
+
+Estos son los portátiles que usan y recomiendan los programadores informáticos para trabajar
+
+
+
+● Aero 16 y 17: Admiten hasta el procesador Intel Core i9-12900HK y  los gráficos RTX 3080 Ti de Nvidia. Permite una RAM DDR5 con una frecuencia de 4.800 MHz y posee un almacenamiento PCIe 4.0.● Aorus 5: Admite hasta el procesador Intel Core i7-12700H y el departamento de gráficos se puede configurar con RTX 3070 de Nvidia. Ambos posee hasta 64 GB de RAM DDR4 con una frecuencia de 3200 MHz.● Aorus 15 y 17: Admiten Intel Core i7-12700H, los gráficos RTX 3080 Ti de Nvidia, la memoria DDR5, almacenamiento PCIe 4.0. y hasta 64 GB de RAM DDR5 con una frecuencia de reloj 4. 800 MHz.MSI● Stealth GS77 y GS66: Permiten el procesador Intel Core i7-12900H y los chips gráficos RTX 3080 Ti de Nvidia. El primero cuenta con una pantalla de  17,3 pulgadas, mientras que el segundo posee 15,6 pulgadas. Ambos tienen ranuras de RAM y admiten hasta 64 GB de memoria DDR 5 con una frecuencia de 4800 MHz.
+
+
+
+
+
+
+
+
+
+
+
+Encontrar un buen ordenador portátil: consejos y modelos por menos de 700 euros
+
+
+
+● Raider GE76 y GE66: Tanto el GE66 de 15,6 pulgadas como el GE76 de 17,3 pulgadas admitirán el procesador Intel Core i9-12900HK y los gráficos RTX 3080 Ti de Nvidia.● Vector GP76 y GP66: Es compatible con el Core i9-12900HK de Intel y la RAM es DDR4 con una frecuencia de 3200 MHz.● Crosshair 17 y 15: Utiliza los procesadores Intel Core i9 y el chip gráfico RTX 3070 Ti de Nvidia.RAZER● Razer Blade 14: Admite el procesador Ryzen 9 6900HX de AMD y RTX 3080 Ti de Nvidia. Tiene un máximo de 16 GB de RAM DDR5 aunque su SSD NVMe de 1 TB es reemplazable.● Razer Blade 15 y Blade 17: Admite Intel Core i9-12900HK y Nvidia RTX 3080 Ti. Ambos admiten hasta 64 GB de RAM DDR5 y sus ranuras M.2 duales permiten hasta 2 TB de almacenamiento NVMe.Apúntate a nuestra newsletter y recibe en tu correo las últimas noticias sobre tecnología.
+######
+PC Portátil Ordenador CES - Consumer Electronics Show Las Vegas Móviles y dispositivos
+######
+05-01-2022

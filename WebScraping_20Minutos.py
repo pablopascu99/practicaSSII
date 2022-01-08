@@ -70,11 +70,14 @@ for link in range(len(listaURLs20min)):
             regExDate1 = re.sub('\s-.*', "", date)
             estructuraDates = re.sub('\.', "-", regExDate1)
 
-            #Creamos los diferentes txt separados por cada noticia
-            noticia20min = estructuraTitulo + "\n######\n" + "\n######\n" + estructuraDates
-            delDir = re.sub('.*noticias/', "", listaURLs20min[link])
+            #Almacenamos la informacion obtenida anteriormente y realizamos regex a los links
+            seccion = " "
+            noticia20min = estructuraTitulo + "\n######\n" + estructuraTexto + "\n######\n" + estructuraTags + "\n######\n" + estructuraDates
+            regexDir = re.findall('https:\/\/.*?\/(.*?)\/', listaURLs20min[link])
+            seccion = seccion.join(regexDir)
 
-            file = open("./20Min/" + delDir + "/20Min_" + delDir + "_" + estructuraDates + "_" + str(contador) + ".txt", "w", encoding="utf-8")
+            #Escribimos la informacion almacenada en los diferentes txt separados
+            file = open("./20Min/" + seccion + "/20Min_" + seccion + "_" + estructuraDates + "_" + str(contador) + ".txt", "w", encoding="utf-8")
             file.write(noticia20min)
             file.close()
             contador = contador+1
