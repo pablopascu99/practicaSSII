@@ -10,19 +10,19 @@ class similarity():
         self.showNoticiaSim_2.setReadOnly(True)
         self.openNoticiaSim.clicked.connect(self.getTextDirText)
 
-    #Creamos una funcion para obtener el texto que desea el usuario para
-    
-    #posteriormente mostrarlo en la vista previa y realizar una busqueda 
-    #de similitudes
     def getTextDirText(self):
+        #Borramos lo que hubiera escrito anteriormente en la direccion
         self.lineTexto.clear()
         
+        #Abrimos una ventana emergente para abrir el archivo de texto deseado
         textName = QFileDialog.getOpenFileName(self, 'Open text file', '/home', "texto (*.txt)")
+
+        #Mostramos la direccion del archivo de texto abierto y imprimimos el texto del txt
         if textName[0] != "":
             self.lineTexto.clear()
             self.lineTexto.setText(textName[0])
             textoShow = ""
-            file = open(textName[0], "r")
+            file = open(textName[0], "r", encoding='utf-8')
             textoShow += file.read()
             self.showNoticiaSim.setText(textoShow)
     
