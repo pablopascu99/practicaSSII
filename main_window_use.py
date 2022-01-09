@@ -27,43 +27,37 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow, similarity):
             self.lineEdit_2.clear()
             self.lineEdit_2.setText(dir)
     
-    #OBTENER EL UMERO DE RESULTASDOS QUE QUEREMOS DEL SPINBOX
-    #OBTENER EL UMERO DE RESULTASDOS QUE QUEREMOS DEL IFLTRAOD DE PERIODicos
-    #PONER NOMBRE A LAS COLUMNAS
-    
     def prueba(self):
-        #print(localizar_directorio(self.comboBox.currentText()))
-        listaBusqueda = localizar_directorio(self.comboBox.currentText())
         resultados = []
 
+        #Obtenemos los valores de los diferentes filtros dados por el usuario
+        #1.Filtrado por periodicos 2.Filtrado libre 3.Filtrado por numero de textos en el ranking
+        listaBusqueda = localizar_directorio(self.comboBox.currentText())
         query = self.filtros.toPlainText()
+        numranking = self.nranking.value()
 
+        #Realizamos la similitud mediante el filtrado libre "ListaBusqueda"
         similitud = similitud_coseno(pathToNoticias(listaBusqueda, query)
             ,listaBusqueda).sort_values(axis=0,ascending=False)
 
         for fichero, similitud in similitud.items():
-            daigual = []
-            daigual.append(str(fichero))
-            daigual.append(str(similitud))
-            resultados.append(daigual)
+            listaResultados = []
+            listaResultados.append(str(fichero))
+            listaResultados.append(str(similitud))
+            resultados.append(listaResultados)
         
-        #Definimos el tama;o de la matriz
-        numFilas = 5
+        #Definimos el tamaño de la matriz
+        numFilas = numranking
         numColumnas = 2
 
-        #COMENTAR ESTODFJLOKWNIOFHNW
+        #Establecemos las columnas y filas de nuestro widget tabla
         self.tableWidget.setRowCount(numFilas)
         self.tableWidget.setColumnCount(numColumnas)
 
-        # Loops to add values into QTableWidget
+        #Iteramos mediante dos for para ir imprimiendo la informacion en la widget
         for row in range (numFilas):
             for column in range (numColumnas):
                 self.tableWidget.setItem(row, column, QTableWidgetItem((resultados[row][column])))
-
-
-
-        
-        
 
 if __name__ == "__main__":
     global app
