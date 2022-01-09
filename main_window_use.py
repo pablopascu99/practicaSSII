@@ -16,7 +16,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow, similarity):
         self.setWindowIcon(QtGui.QIcon('./img/periodico.png'))
         self.setWindowTitle("Busquedas y recomendaciones")
         self.textos.setReadOnly(True)
-        self.botonbuscar.clicked.connect(self.prueba)
+        self.botonbuscar.clicked.connect(self.resultadoRanking)
         self.app = app
 
     def abrirCarpeta(self):
@@ -27,7 +27,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow, similarity):
             self.lineEdit_2.clear()
             self.lineEdit_2.setText(dir)
     
-    def prueba(self):
+    def resultadoRanking(self):
         resultados = []
 
         #Obtenemos los valores de los diferentes filtros dados por el usuario
@@ -58,6 +58,10 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow, similarity):
         for row in range (numFilas):
             for column in range (numColumnas):
                 self.tableWidget.setItem(row, column, QTableWidgetItem((resultados[row][column])))
+        
+        #Establecemos un tamaño para la columna de los nombres de los archivos
+        #para tener una mejor lectura de los mismos
+        self.tableWidget.setColumnWidth(0,359)
 
 if __name__ == "__main__":
     global app
