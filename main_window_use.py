@@ -26,7 +26,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow, similarity):
         if dir != "":
             self.lineEdit_2.clear()
             self.lineEdit_2.setText(dir)
-    
+
     def resultadoRanking(self):
         resultados = []
 
@@ -62,6 +62,15 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow, similarity):
         #Establecemos un tamaño para la columna de los nombres de los archivos
         #para tener una mejor lectura de los mismos
         self.tableWidget.setColumnWidth(0,359)
+
+    def rowSeleccionada(self):
+        row = self.tableWidget.currentRow()
+        item = self.tableWidget.item(row, 0)
+
+        textoShow=""
+        file = open(item.text(), "r", encoding='utf-8')
+        textoShow += file.read()
+        self.textos.setText(textoShow)
 
 if __name__ == "__main__":
     global app

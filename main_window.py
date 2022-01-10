@@ -359,6 +359,8 @@ class Ui_MainWindow(object):
         self.label_13.setText(_translate("MainWindow", "Noticia"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.recom), _translate("MainWindow", "Recomendación"))
 
+        self.tableWidget.setSelectionBehavior(QtWidgets.QTableView.SelectRows)
+        self.tableWidget.itemSelectionChanged.connect(self.rowSeleccionada)
 
 if __name__ == "__main__":
     import sys
