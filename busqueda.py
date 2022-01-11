@@ -95,6 +95,16 @@ def pathToNoticias(noticias,query):
     return noticiasProcesadas
 
 '''
+Funcion coge como argumentos una lista con la ruta de noticias y una noticia consultada y las agrupará en una lista conjunta 
+'''
+def pathToNoticias2(noticias,queryNoticia):
+    noticiasProcesadas=[]
+    for noticia in noticias:
+        noticiasProcesadas.append(procesamiento_lenguaje_noticia(txt_toTokens(noticia)))  
+    noticiasProcesadas.append(procesamiento_lenguaje_noticia(txt_toTokens(queryNoticia)))
+    return noticiasProcesadas
+
+'''
 Funcion donde ponderamos los stem mediante TF-IDF, creando un dataframe con esas ponderaciones y
 el numero de noticia al que pertenecen
 '''
