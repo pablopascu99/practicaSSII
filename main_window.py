@@ -99,6 +99,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_5.addItem(spacerItem1)
         self.verticalLayout_6.addLayout(self.horizontalLayout_5)
         self.tableWidget = QtWidgets.QTableWidget(self.search)
+        self.tableWidget.setSelectionBehavior(QtWidgets.QAbstractItemView.SelectRows)
         self.tableWidget.setObjectName("tableWidget")
         self.tableWidget.setColumnCount(0)
         self.tableWidget.setRowCount(0)
@@ -359,8 +360,6 @@ class Ui_MainWindow(object):
         self.label_13.setText(_translate("MainWindow", "Noticia"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.recom), _translate("MainWindow", "Recomendación"))
 
-        self.tableWidget.setSelectionBehavior(QtWidgets.QTableView.SelectRows)
-        self.tableWidget.itemSelectionChanged.connect(self.rowSeleccionada)
 
 if __name__ == "__main__":
     import sys

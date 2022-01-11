@@ -17,6 +17,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow, similarity):
         self.setWindowTitle("Busquedas y recomendaciones")
         self.textos.setReadOnly(True)
         self.botonbuscar.clicked.connect(self.resultadoRanking)
+        self.tableWidget.itemSelectionChanged.connect(self.rowSeleccionada)
         self.app = app
 
     def abrirCarpeta(self):
