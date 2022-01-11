@@ -47,23 +47,27 @@ for link in range(len(listaURLs20min)):
             estructuraTexto = soupNoticia.find('div', {'class':'article-text'}).text
 
             #Extraemos los tags de las diferentes noticias
-            estructuraEtiquetas = soupNoticia.find('div', {'class' : 'module module-related'})
-            tags=""
-            tagsfinal=" "
+            estructuraEtiquetas = soupNoticia.find('li', {'class' : 'tag'}).text
+            tagsNuevo = re.sub('\n\s+', "", estructuraEtiquetas)
+            tagsNuevo2 = tagsNuevo + " | "
+            print(tagsNuevo2)
+
+            '''
             if estructuraEtiquetas is not None:
                 try:
                     childrenEtiquetas = estructuraEtiquetas.findChildren("ul" , recursive=False)
                     for childEtiquetas in childrenEtiquetas:
-                        tags = tags + childEtiquetas.text + "|"
+                        tags = tags + childEtiquetas.text
 
                 except: 
                     tags = "Noticia sin etiquetas"
             if estructuraEtiquetas is None:
                 tags = "Noticia sin etiquetas"
+            '''
             
-            tags2 = re.findall('[^\s].+', tags)
+            #tags2 = re.findall('([^\s].+)', tags).group(1)
             #Convertimos el output en string para la escritura en el archivo de texto  
-            estructuraTags = tagsfinal.join(tags2)
+            #estructuraTags = tagsfinal.join(tags2)
 
             #Cogemos la fecha de cada noticia
             date = soupNoticia.find('span', {'class':'article-date'}).text
@@ -72,12 +76,12 @@ for link in range(len(listaURLs20min)):
 
             #Almacenamos la informacion obtenida anteriormente y realizamos regex a los links
             seccion = " "
-            noticia20min = estructuraTitulo + "\n######\n" + estructuraTexto + "\n######\n" + estructuraTags + "\n######\n" + estructuraDates
+            noticia20min = estructuraTitulo + "\n######\n" + estructuraTexto + "\n######\n" + tagsNuevo2 + "\n######\n" + estructuraDates
             regexDir = re.findall('https:\/\/.*?\/(.*?)\/', listaURLs20min[link])
             seccion = seccion.join(regexDir)
 
             #Escribimos la informacion almacenada en los diferentes txt separados
-            file = open("./20Min/" + seccion + "/20Min_" + seccion + "_" + estructuraDates + "_" + str(contador) + ".txt", "w", encoding="utf-8")
+            file = open("./20Minutos/" + seccion + "/20Minutos_" + seccion + "_" + estructuraDates + "_" + str(contador) + ".txt", "w", encoding="utf-8")
             file.write(noticia20min)
             file.close()
             contador = contador+1
