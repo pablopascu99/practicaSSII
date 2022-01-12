@@ -74,6 +74,7 @@ def getFieldsFromPages (listaURLs):
                         tags = "Noticia sin etiquetas"
                 if estructuraEtiquetas is None:
                     tags = "Noticia sin etiquetas"
+                print(tags)
                 # Cogemos las fechas
                 containerFecha = str(soupNoticia.find('div', {'class':'ue-c-article__publishdate'}))
                 delTime = re.sub('.+datetime="|T[.\s\S\n]+',"", containerFecha)
