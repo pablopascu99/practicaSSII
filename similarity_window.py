@@ -61,8 +61,8 @@ class similarity():
 
         #Establecemos un tamaño para la columna de los nombres de los archivos
         #para tener una mejor lectura de los mismos
-        self.tableWidget_2.setColumnWidth(0,340)
-        self.tableWidget_2.setColumnWidth(1,100)
+        self.tableWidget_2.setColumnWidth(0,316)
+        self.tableWidget_2.setColumnWidth(1,140)
 
     def rowSeleccionadaSim(self):
         row = self.tableWidget_2.currentRow()
