@@ -184,11 +184,11 @@ Funcion que calcula el coeficiente de sorensen dice de dos noticias, una de ella
 ''' 
 def calculo_sorensen_dice(etiquetas_doc_1, etiquetas_doc_2):
     # vemos las etiquetas ya
-    print('Etiquetas noticia X: ',etiquetas_doc_1)
-    print('Etiquetas query: ',etiquetas_doc_2)
+    #print('Etiquetas noticia X: ',etiquetas_doc_1)
+    #print('Etiquetas query: ',etiquetas_doc_2)
     # aplicamos la libreria textdistance para calcular el coeficiente de sorensen dice dados dos strings
     sd = textdistance.sorensen(etiquetas_doc_1, etiquetas_doc_2)
-    print(sd)
+    #print(sd)
     return sd
 
 '''
@@ -208,26 +208,42 @@ def path(ruta_path):
     return data
 
 '''
+Funcion que en base a una ruta obtiene el contenido de la noticia dentro de esa ruta
+'''
+def obtenerTexto(ruta: str):
+    # abrimos el archivo
+    opener = open(ruta, 'r', encoding="utf-8")
+    # lo leemos y lo guardamos en una variable data
+    data = opener.read()
+    # cerramos el archivo
+    opener.close()
+    # retornamos el contenido de la noticia guardado en data
+    return data
+
+'''
 Funcion que calcula el coeficiente de sorensen dice de todas las noticias de un path frente a una query
 ''' 
 def calculo_sorensen_dice_path(path:list, query):
     # calculamos las etiquetas de la query
     etiquetas_doc_2 = obtener_etiquetas(query)
-    # dos listas para almacenar las etiquetas de las noticias y los coeficientes
-    #noticias = []
-    #sds = []
-    # por cada noticia del path
+    # creamos una lista para almacenar los coeficientes de sorensen dice y posterioremente tambien la ruta
+    listaNoticias = []
+    # recorremos el path por cada noticia 
     for noticia in path:
-        # obtenemos las etiquetas de la noticia
-        etiquetas_doc_1 = obtener_etiquetas(noticia)
-        # calculamos el coeficiente frente a la query
+        # noticia es una ruta por lo que obtenemos el contenido de la noticia de esa ruta
+        n = obtenerTexto(noticia)
+        # trabajamos con n que es el contenido de la noticia
+        etiquetas_doc_1 = obtener_etiquetas(n)
+        # obtenemos las etiquetas de n y calculamos la ponderacion
         sd = calculo_sorensen_dice(etiquetas_doc_1, etiquetas_doc_2)
-        # añadimos a la lista
-        #noticias.append(noticia)
-        #sds.append(sd)
-    #results = pd.DataFrame(sds, index=noticias)
-    #results.to_csv('sorensen_coeficients.csv')
-    return sd
+        # lo metemos en otra lista solo para la noticia X
+        item_ponderacion = [noticia,sd]
+        # metemos la noticia X dentro de nuestra listaNoticias
+        listaNoticias.append(item_ponderacion)
+    # creamos un results como df para almacenar los resultados
+    results = pd.DataFrame(listaNoticias, columns=['Noticia', 'Ponderacion'])
+    results.to_csv('sorensen.csv', index=False)
+    return listaNoticias
 
 def main():
     l=localizar_directorio("ElPais")
@@ -238,14 +254,15 @@ def main():
         ,l).sort_values( axis=0,ascending=False).to_csv('similitud.txt')
     
     # obtenemos la info de la query escogida
-    query_root = open('./ElPais/ciencia/ElPais_ciencia_2021-12-24_22.txt', 'r', encoding="utf-8")
+    query_root = open('./ElMundo/ciencia/ElMundo_ciencia_2021-11-24_48.txt', 'r', encoding="utf-8")
     query = query_root.read()
     query_root.close()
     
     # obtenemos el path del mundo
-    m = path("./ElMundo/salud/")
+    m = localizar_directorio("ElMundo")
     
     # obtenemos la similitud de coseno de la query con las noticias del path
-    #calculo_sorensen_dice_path(m, query)
-    
+    calculo_sorensen_dice_path(m, query)
+
+# ejecutamos el main
 main()
