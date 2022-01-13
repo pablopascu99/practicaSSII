@@ -46,6 +46,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow, similarity):
             listaResultados.append(str(fichero))
             listaResultados.append(str(similitud))
             resultados.append(listaResultados)
+        resultados.pop(0)
         
         #Definimos el tamaño de la matriz
         numFilas = numranking
