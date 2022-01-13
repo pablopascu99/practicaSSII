@@ -43,25 +43,27 @@ def getFieldsFromPages (listaURLs):
             premium = soupNoticia.find('div', {'class':'ue-c-article__premium-tag'})
             if premium is None: 
                 # Cogemos el titulo
-                try: 
-                    titulo = soupNoticia.find('h1', {'class': 'ue-c-article__headline js-headline'}).text
-                except: 
+                estructuraTitulo = soupNoticia.find('h1', {'class': 'ue-c-article__headline js-headline'})
+                if estructuraTitulo is not None:  
+                   titulo = estructuraTitulo.text
+                else: 
                     titulo = "Noticia sin titulo"
                 # Cogemos la entradilla
-                try: 
-                    entradilla = soupNoticia.find('p', {'class':'ue-c-article__standfirst'}).text
-                except: 
+                estructuraEntradilla = soupNoticia.find('p', {'class':'ue-c-article__standfirst'})
+                if estructuraEntradilla is not None: 
+                    entradilla = estructuraEntradilla.text
+                else: 
                     entradilla = "Noticia sin entradilla"
                 # cogemos el field para coger el texto
-                try: 
-                    estructuraTexto = soupNoticia.find('div', {'class': 'ue-l-article__body ue-c-article__body'})
+                estructuraTexto = soupNoticia.find('div', {'class': 'ue-l-article__body ue-c-article__body'})
+                if estructuraTexto is not None: 
                     # Cogemos los p de la estructura de texto que conformaran todo el texto que necesitamos
                     childrenTexto = estructuraTexto.findChildren("p" , recursive=False)
                     texto=""
                     for childTexto in childrenTexto:
                         texto = texto + childTexto.text
-                except: 
-                    testo = "Noticia premium, sin texto"
+                else: 
+                    texto = "Noticia premium, sin texto"
                 # Cogemos las etiquetas
                 estructuraEtiquetas = soupNoticia.find('ul', {'class' : 'ue-c-article__tags'})
                 tags=""
@@ -77,15 +79,18 @@ def getFieldsFromPages (listaURLs):
                 # Cogemos las fechas
                 containerFecha = str(soupNoticia.find('div', {'class':'ue-c-article__publishdate'}))
                 delTime = re.sub('.+datetime="|T[.\s\S\n]+',"", containerFecha)
-            # Todo el string que meteremos al archivo de texto
-            noticiaElMundo = titulo + "\n######\n" + entradilla + "\n######\n" + texto + "\n######\n" + tags + "\n######\n" + delTime + "\n\n"
-            delDir_v1 = re.sub('.*\/',"", listaURLsElMundo[link])
-            delDir = re.sub('.html', "", delDir_v1)
-            file = open("./ElMundo/" + delDir + "/ElMundo_" + delDir + "_" + delTime + "_" + str(cont) + ".txt", "w", encoding="utf-8")
-            file.write(noticiaElMundo)
-            file.close()
-            cont=cont+1
-            #print(noticiaElMundo)
+            if estructuraEtiquetas is None and estructuraTitulo is None and estructuraTexto is None and estructuraEntradilla is None:
+                return 
+            else: 
+                # Todo el string que meteremos al archivo de texto
+                noticiaElMundo = titulo + "\n######\n" + entradilla + "\n######\n" + texto + "\n######\n" + tags + "\n######\n" + delTime + "\n\n"
+                delDir_v1 = re.sub('.*\/',"", listaURLsElMundo[link])
+                delDir = re.sub('.html', "", delDir_v1)
+                file = open("./ElMundo/" + delDir + "/ElMundo_" + delDir + "_" + delTime + "_" + str(cont) + ".txt", "w", encoding="utf-8")
+                file.write(noticiaElMundo)
+                file.close()
+                cont=cont+1
+                #print(noticiaElMundo)
 
 # llamamos a la funcion con nuestra lista de enlaces creadas
 noticiasElMundo = getFieldsFromPages(listaURLsElMundo)
