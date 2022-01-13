@@ -30,7 +30,7 @@
     <item row="0" column="0">
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>1</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="search">
        <attribute name="title">
@@ -50,8 +50,8 @@
             <property name="font">
              <font>
               <pointsize>10</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
+              <weight>50</weight>
+              <bold>false</bold>
              </font>
             </property>
             <property name="title">
@@ -131,11 +131,11 @@
                </item>
                <item>
                 <widget class="QTextEdit" name="filtros">
+                 <property name="markdown">
+                  <string/>
+                 </property>
                  <property name="placeholderText">
                   <string>Escriba la consulta que desee realizar.</string>
-                 </property>
-                 <property name="markdown" stdset="0">
-                  <string/>
                  </property>
                 </widget>
                </item>
@@ -663,7 +663,11 @@
             </layout>
            </item>
            <item>
-            <widget class="QTableView" name="tableView_2"/>
+            <widget class="QTableWidget" name="tableWidget_3">
+             <property name="selectionBehavior">
+              <enum>QAbstractItemView::SelectRows</enum>
+             </property>
+            </widget>
            </item>
           </layout>
          </item>
@@ -719,6 +723,44 @@
           </layout>
          </item>
         </layout>
+       </widget>
+       <widget class="QComboBox" name="comboBox_3">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>260</y>
+          <width>69</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>salud</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>tecnologia</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>ciencia</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>210</y>
+          <width>391</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Filtros de recomendación:</string>
+        </property>
        </widget>
       </widget>
      </widget>
