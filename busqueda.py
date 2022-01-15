@@ -254,7 +254,7 @@ def main():
         ,l).sort_values( axis=0,ascending=False).to_csv('similitud.txt')
     
     # obtenemos la info de la query escogida
-    query_root = open('./ElMundo/ciencia/ElMundo_ciencia_2021-11-24_48.txt', 'r', encoding="utf-8")
+    query_root = open('./ElMundo/ciencia/ElMundo_ciencia_2022-01-02_15.txt', 'r', encoding="utf-8")
     query = query_root.read()
     query_root.close()
     
