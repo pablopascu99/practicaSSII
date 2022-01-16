@@ -12,6 +12,7 @@ headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit
 for link in range(len(listaURLs20min)):
     page = requests.get(listaURLs20min[link], headers=headers)
 
+    #Realiza un print de 200 si esta bien y 400 si esta mal
     print(page.status_code)
     soup = BeautifulSoup(page.text, 'html.parser')
 
