@@ -560,7 +560,7 @@
                   </widget>
                  </item>
                  <item>
-                  <widget class="QComboBox" name="comboBox_3">
+                  <widget class="QComboBox" name="comboCategoria">
                    <item>
                     <property name="text">
                      <string>salud</string>
@@ -632,7 +632,7 @@
                   <widget class="QLineEdit" name="lineTexto_2"/>
                  </item>
                  <item>
-                  <widget class="QPushButton" name="openNoticiaSim_2">
+                  <widget class="QPushButton" name="realizarRecomendacion">
                    <property name="text">
                     <string>Abrir...</string>
                    </property>
@@ -694,7 +694,7 @@
                </layout>
               </item>
               <item>
-               <widget class="QTextEdit" name="textEdit_2"/>
+               <widget class="QTextEdit" name="showNoticiaRec"/>
               </item>
              </layout>
             </item>

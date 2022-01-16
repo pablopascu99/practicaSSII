@@ -1,7 +1,6 @@
 from PyQt5.QtWidgets import QFileDialog
 from PyQt5.QtWidgets import QTableWidgetItem
 from busqueda import *
-import os
 
 class similarity():
 
@@ -73,12 +72,3 @@ class similarity():
         file = open(item.text(), "r", encoding='utf-8')
         textoShow += file.read()
         self.showNoticiaSim_2.setText(textoShow)
-
-
-        
-
-
-        
-
-
-
