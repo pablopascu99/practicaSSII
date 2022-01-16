@@ -20,13 +20,13 @@ class recomendation():
     #Creacion de funcion para la seleccion de las noticias mostadas en el ranking
     def rowSeleccionadaRec(self):
         #Se obiene la columna seleccionada como "item"
-        row = self.tableWidget_2.currentRow()
-        item = self.tableWidget_2.item(row, 0)
+        row = self.tableWidget_3.currentRow()
+        item = self.tableWidget_3.item(row, 0)
 
-        #Obtenemos el texto de la columna seleccionada.
+        #Obtenemos el texto del item seleccionado.
         textoShow=""
         file = open(item.text(), "r", encoding='utf-8')
         textoShow += file.read()
         #Imprimimos el texto en el espacio de "Noticia"
-        self.showNoticiaSim_2.setText(textoShow)
+        self.showNoticiaSim_3.setText(textoShow)
         #pyuic5 -x window.ui -o main_window.py

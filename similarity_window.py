@@ -64,11 +64,15 @@ class similarity():
         self.tableWidget_2.setColumnWidth(0,316)
         self.tableWidget_2.setColumnWidth(1,140)
 
+    #Funcion dedicada a la visualizacion de elementos del ranking
     def rowSeleccionadaSim(self):
+        #Introducimos la noticia clickada en "item"
         row = self.tableWidget_2.currentRow()
         item = self.tableWidget_2.item(row, 0)
 
+        #Obtenemos el texto del item seleccionado
         textoShow=""
         file = open(item.text(), "r", encoding='utf-8')
         textoShow += file.read()
+        #Imprimimos el texto en el espacio de "Noticia"
         self.showNoticiaSim_2.setText(textoShow)

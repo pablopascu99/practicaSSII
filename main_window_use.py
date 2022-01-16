@@ -13,23 +13,20 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow, similarity, recomendation
     def __init__(self, app, *args, **kwargs):
         QtWidgets.QMainWindow.__init__(self, *args, **kwargs)
         self.setupUi(self)
+        #Iniciamos las dos ventanas extra
         self.initSimilarity()
         self.initRecomendation()
+        #Establecemos tanto un logo como título del programa
         self.setWindowIcon(QtGui.QIcon('./img/periodico.png'))
         self.setWindowTitle("Busquedas y recomendaciones")
+        #Establecemos la propiedad de solo lectura al componente textos
         self.textos.setReadOnly(True)
+        #Establecemos la funcion a ejecutar cuando se clicke en los botones
         self.botonbuscar.clicked.connect(self.resultadoRanking)
         self.tableWidget.itemSelectionChanged.connect(self.rowSeleccionada)
         self.app = app
 
-    def abrirCarpeta(self):
-        self.lineEdit_2.clear()
-        dir = QFileDialog.getExistingDirectory(
-            self, "Open directory", "/home", QFileDialog.ShowDirsOnly)
-        if dir != "":
-            self.lineEdit_2.clear()
-            self.lineEdit_2.setText(dir)
-
+    #Funcion para realizar la similitud respecto a busqueda libre
     def resultadoRanking(self):
         resultados = []
 
@@ -67,13 +64,17 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow, similarity, recomendation
         #para tener una mejor lectura de los mismos
         self.tableWidget.setColumnWidth(0,359)
 
+    #Funcion dedicada a la visualizacion de elementos del ranking
     def rowSeleccionada(self):
+        #Introducimos la noticia clickada en "item"
         row = self.tableWidget.currentRow()
         item = self.tableWidget.item(row, 0)
 
+        #Obtenemos el texto del item seleccionado
         textoShow=""
         file = open(item.text(), "r", encoding='utf-8')
         textoShow += file.read()
+        #Imprimimos el texto en el espacio de "Noticia"
         self.textos.setText(textoShow)
 
 if __name__ == "__main__":
