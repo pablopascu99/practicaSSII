@@ -72,6 +72,8 @@ for link in range(len(listaURLsElPais)):
             # Todo el string que meteremos al archivo de texto
             noticiaElPais = titulo + "\n######\n" + entradilla + "\n######\n" + texto + "\n######\n" + tags + "\n######\n" + delTime
             delDir = re.sub('.*noticias/', "", listaURLsElPais[link])
+            if delDir == "sanidad":
+                delDir = re.sub('sanidad', "salud", delDir)
             # Situamos y creamos los archivos de texto con los campos extraidos
             file = open("./ElPais/" + delDir + "/ElPais_" + delDir + "_" + delTime + "_" + str(cont) + ".txt", "w", encoding="utf-8")
             file.write(noticiaElPais)
