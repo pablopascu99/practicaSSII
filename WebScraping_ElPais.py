@@ -80,4 +80,4 @@ for link in range(len(listaURLsElPais)):
             file.close()
             cont=cont+1
         except:
-            contenido=""
+            contenido="######\n ######\n ######\n Noticias sin etiquetas ######\n ######\n"

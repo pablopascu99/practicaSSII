@@ -1,0 +1,46 @@
+Demostrado: la tarjeta SIM integrada en el procesador de un móvil ofrece un mayor rendimiento
+######
+Las compañías Qualcomm, Vodafone y Thales han probado su iSIM en un Samsung Galaxy Z Flip3 y los resultados demuestran que cumplen con las especificaciones exigidas.T-Mobile sufre otro ciberataque: roban los datos de las tarjetas SIM de algunos clientes
+######
+
+Las tarjetas SIM han reducido su tamaño con el paso de los años. Desde su creación en 1991 hasta la actualidad, estos dispositivos han pasado de tener el tamaño de una tarjeta de crédito (85,6 x 55,99 mm) a no necesitarse nada físico, como ocurre con las eSIM de los próximos iPhone 14.
+
+
+
+
+
+
+
+
+
+
+
+Se filtran nuevas características del iPhone 14: se eliminan las tarjetas SIM y el 'notch' de la pantalla
+
+
+
+Además de la eSIM, también se está trabajando en smartphones que tengan una iSIM, es decir, una tarjeta SIM integrada en el dispositivo. Mientras que la eSIM sigue necesitando un espacio para el módulo que hace funcionar su tecnología, la iSIM añade la funcionalidad de la SIM directamente en el procesador.Qualcomm, Vodafone y Thales enseñaron cómo funciona la tecnología de iSIM en los teléfonos inteligentes para demostrar que estos dispositivos eran capaces de “mejorar la eficiencia y el rendimiento”.Según han explicado en la demostración, la integración de las SIM en los smartphones permitirán llevar las comunicaciones a muchos más dispositivos. Asimismo, como no necesitan un módulo específico, hay mayor espacio en el interior.
+
+
+Las iSIM no necesitan un módulo específico.Qualcomm
+Las pruebas de iSIM se han llevado a cabo en los laboratorios de I+D de Samsung en Europa y el dispositivo elegido ha sido el Samsung Galaxy Z Flip3 5G. En la publicación han explicado que el procesador integrado era Qualcomm Snapdragon 888 5G y han recurrido a la red de Vodafone.
+
+
+
+
+
+
+
+
+
+
+
+Todo lo que debes saber sobre móviles plegables: estos son los dispositivos que han lanzado las marcas hasta ahora
+
+
+
+El resultado de la demostración ha dado como veredicto que la iSIM cumple con todas las especificaciones exigidas por la GSMA, que es una asociación de operadores móviles y compañías relacionadas.Esta tecnología supone un avance y presenta la posibilidad de emplear diversas tarjetas SIM a la vez. Además, la iSIM también implica que los operadores ya no tengan la necesidad de enviar físicamente las tarjetas.No obstante, todavía queda mucho camino por delante y Qualcomm y Thales han detallado que pretenden seguir trabajando en mejorar esta tecnología.Apúntate a nuestra newsletter y recibe en tu correo las últimas noticias sobre tecnología.
+######
+ iPhone | Vodafone | Samsung | Europa | Samsung Galaxy | Móviles y dispositivos | Tech | 
+######
+20-01-2022

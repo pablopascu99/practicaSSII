@@ -531,7 +531,7 @@
           <item>
            <widget class="QGroupBox" name="groupBox_4">
             <property name="title">
-             <string>Opciones de recomendación:</string>
+             <string>Opciones de prediccion:</string>
             </property>
             <layout class="QGridLayout" name="gridLayout_6">
              <item row="0" column="0">
@@ -541,7 +541,7 @@
                  <item>
                   <widget class="QLabel" name="label_15">
                    <property name="text">
-                    <string>Numero de recomendaciones</string>
+                    <string>Numero de predicciones:</string>
                    </property>
                   </widget>
                  </item>
@@ -550,32 +550,6 @@
                    <property name="minimum">
                     <number>5</number>
                    </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QLabel" name="label_18">
-                   <property name="text">
-                    <string>Categoría:</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QComboBox" name="comboCategoria">
-                   <item>
-                    <property name="text">
-                     <string>salud</string>
-                    </property>
-                   </item>
-                   <item>
-                    <property name="text">
-                     <string>tecnologia</string>
-                    </property>
-                   </item>
-                   <item>
-                    <property name="text">
-                     <string>ciencia</string>
-                    </property>
-                   </item>
                   </widget>
                  </item>
                  <item>

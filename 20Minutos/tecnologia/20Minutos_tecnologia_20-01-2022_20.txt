@@ -1,0 +1,50 @@
+Cómo encontrar a alguien en WhatsApp si no aparece en tu lista de contactos guardados
+######
+El usuario no necesita añadir a su lista de contactos a una persona con la que va a hablar en un par de ocasiones para poder abrir una conversación por WhatsApp. WhatsApp está desarrollando una herramienta para difuminar imágenes en su editor
+######
+
+WhatsApp es la aplicación de mensajería instantánea más utilizada en el mundo, sin embargo, tiene un defecto. Cuando un usuario quiere enviar un mensaje a alguien sin necesidad de guardar su número en la agenda de su teléfono, parece imposible (aunque no lo es).
+
+
+
+
+
+
+
+
+
+
+
+¿Con quién compartes más fotos? Este truco de WhatsApp te ayuda a descubrirlo
+
+
+
+Tanto a través de Android como con iOS existe la posibilidad de enviar un mensaje privado sin tener que recurrir a agendarlo en la lista de contactos. Esta función puede ser muy útil para cuando un usuario tiene que contactar con un técnico por WhatsApp tan solo un par de veces, por ejemplo.Para escribir a un número desconocido, hay que introducir en un buscador la dirección ‘https://api.whatsapp.com/send?phone=XXXXXXXXXXX’. Una vez en la página, se deberá cambiar las equis de enlace por el prefijo del país y el número de teléfono de la persona con la que se quiere hablar.
+
+
+Presiona en 'Continuar al chat' para conversar con la persona no agendada.20BITS
+
+
+
+
+
+
+
+
+
+
+
+
+Estas son las gestiones de tu negocio que puedes hacer con WhatsApp Business
+
+
+
+Por poner un ejemplo, si el usuario quiere hablar con una persona de España, tendrá que poner ‘34’ (sin el símbolo +) y el número de teléfono sin separaciones. Posteriormente, hay que dar a la tecla de enter y clicar en ‘Continuar al chat’.Una vez ahí, la página dará la opción de comenzar la conversación en la aplicación o desde el navegador web. De esta manera, si no se tiene la app descargada, se puede usar el servicio web de la plataforma sin ningún problema.
+
+
+La página permite que abras la conversación en la app o en el navegador.20BITS
+Al realizar este proceso, el usuario ya tendrá acceso al chat con la persona a la que no quiere agregar en su agenda. Esta función se puede utilizar tanto en el ordenador como en el smartphone. Apúntate a nuestra newsletter y recibe en tu correo las últimas noticias sobre tecnología.
+######
+ Mensajería instantánea | Chat | Android | Redes sociales | Whatsapp | iOS | Aplicaciones móvil | Redes y apps | 
+######
+20-01-2022

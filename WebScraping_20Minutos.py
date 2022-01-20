@@ -78,7 +78,7 @@ for link in range(len(listaURLs20min)):
 
             #Almacenamos la informacion obtenida anteriormente y realizamos regex a los links
             seccion = " "
-            noticia20min = estructuraTitulo + "\n######\n" + estructuraTexto + "\n######\n" + tagsNuevo2 + "\n######\n" + estructuraDates
+            noticia20min = estructuraTitulo + "\n######\n" + estructuraEntradilla + "\n######\n" + estructuraTexto + "\n######\n" + estructuraTags + "\n######\n" + estructuraDates
             regexDir = re.findall('https:\/\/.*?\/(.*?)\/', listaURLs20min[link])
             seccion = seccion.join(regexDir)
 

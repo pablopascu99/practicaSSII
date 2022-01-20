@@ -172,7 +172,7 @@ Funcion que devuelve las etiquetas de la noticia
 ''' 
 def obtener_etiquetas(document):
     # Obtenemos las etiquetas de la noticia cogiendo todo lo que haya despues del tercer separador (######) y hasta el cuarto
-    regex_1_doc_1 = re.match('(?:[^######]*\######){3}([^######]*)', document).group(1)
+    regex_1_doc_1 = re.match('(?:[^#]*{6}){3}([\s\S]*?)######', document).group(2)
     # Eliminamos los separadores de la etiqueta (|)
     regex_2_doc_1 = re.sub('((?: \| )+),?',' ', regex_1_doc_1)
     # Eliminamos los meros \n que quedan
@@ -242,7 +242,6 @@ def calculo_sorensen_dice_path(path:list, query):
         listaNoticias.append(item_ponderacion)
     # creamos un results como df para almacenar los resultados
     results = pd.DataFrame(listaNoticias, columns=['Noticia', 'Ponderacion'])
-    results.to_csv('sorensen.csv', index=False)
     return listaNoticias
 
 def main():
@@ -259,7 +258,7 @@ def main():
     query_root.close()
     
     # obtenemos el path del mundo
-    m = localizar_directorio("ElMundo")
+    m = localizar_directorio("20Minutos")
     
     # obtenemos la similitud de coseno de la query con las noticias del path
     calculo_sorensen_dice_path(m, query)
