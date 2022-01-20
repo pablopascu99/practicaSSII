@@ -42,34 +42,35 @@ for link in range(len(listaURLs20min)):
             #Primero obtenemos el titulo de las noticias
             estructuraTitulo = soupNoticia.find('h1', {'class':'article-title'}).text
 
+            #Obtenemos la entradilla de las noticias
+            estructuraEntradilla = soupNoticia.find('div', {'id':'m35-34-36'}).text
+
             #Cogeremos ahora el texto de los diferentes noticias
             #para ello filtraremos mas de cerca lo que necesitamos
             #posteriormente cogeremos los diferentes parrafos de las noticias
             estructuraTexto = soupNoticia.find('div', {'class':'article-text'}).text
 
             #Extraemos los tags de las diferentes noticias
-            estructuraEtiquetas = soupNoticia.find('li', {'class' : 'tag'}).text
-            tagsNuevo = re.sub('\n\s+', "", estructuraEtiquetas)
-            tagsNuevo2 = tagsNuevo + " | "
-            print(tagsNuevo2)
-
-            '''
+            estructuraEtiquetas = soupNoticia.find('div', {'class' : 'module module-related'})
+            tags=""
+            estructuraTags=" "
             if estructuraEtiquetas is not None:
                 try:
                     childrenEtiquetas = estructuraEtiquetas.findChildren("ul" , recursive=False)
                     for childEtiquetas in childrenEtiquetas:
-                        tags = tags + childEtiquetas.text
+                        tags = tags + childEtiquetas.text + "|"
 
                 except: 
                     tags = "Noticia sin etiquetas"
             if estructuraEtiquetas is None:
                 tags = "Noticia sin etiquetas"
-            '''
             
-            #tags2 = re.findall('([^\s].+)', tags).group(1)
-            #Convertimos el output en string para la escritura en el archivo de texto  
-            #estructuraTags = tagsfinal.join(tags2)
+            tagsRegex = re.findall('[^\s].+', tags)
 
+            #Recorremos la lista obtenida para añadir \
+            for tag in tagsRegex:
+                estructuraTags = estructuraTags + tag + " | "
+            
             #Cogemos la fecha de cada noticia
             date = soupNoticia.find('span', {'class':'article-date'}).text
             regExDate1 = re.sub('\s-.*', "", date)

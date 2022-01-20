@@ -1,1 +1,2 @@
+#Ignoramos la carpeta pycache en los commits.
 __pycache__/
