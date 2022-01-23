@@ -38,14 +38,14 @@ class recomendation():
         query_root.close()
 
         #Realizamos la recomendacion mediante sorensen, introduciendo la query y la carpeta a comparar
-        sorensen = calculo_sorensen_dice_path(listaBusqueda, query)
-
-        for fichero, sorensen in sorensen:
+        sorensen = calculo_sorensen_dice_path(listaBusqueda, query).sort_values(by='sd',axis=0,ascending=False)
+        
+        for fichero, sorensen in sorensen.items():
             listaResultados = []
             listaResultados.append(str(fichero))
             listaResultados.append(str(sorensen))
             resultados.append(listaResultados)
-        
+    
         #Definimos el tamaño de la matriz
         numFilas = numranking
         numColumnas = 2
