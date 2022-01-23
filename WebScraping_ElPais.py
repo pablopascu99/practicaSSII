@@ -45,6 +45,7 @@ for link in range(len(listaURLsElPais)):
             texto=""
             for childTexto in childrenTexto:
                 texto = texto + childTexto.text
+                texto = re.sub('#',' ', texto)
             # Cogemos las etiquetas hijas de la estructura de etiquetas que agruparan
             # todas las etiquetas que necesitamos
             estructuraEtiquetas = soupNoticia.find('ul', {'class': '_df _ls' })

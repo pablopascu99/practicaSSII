@@ -62,6 +62,7 @@ def getFieldsFromPages (listaURLs):
                     texto=""
                     for childTexto in childrenTexto:
                         texto = texto + childTexto.text
+                        texto = re.sub('#',' ', texto)
                 else: 
                     texto = "Noticia premium, sin texto"
                 # Cogemos las etiquetas
