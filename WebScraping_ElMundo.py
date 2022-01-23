@@ -93,7 +93,6 @@ def getFieldsFromPages (listaURLs):
                 file.write(noticiaElMundo)
                 file.close()
                 cont=cont+1
-                #print(noticiaElMundo)
 
 # llamamos a la funcion con nuestra lista de enlaces creadas
 noticiasElMundo = getFieldsFromPages(listaURLsElMundo)
