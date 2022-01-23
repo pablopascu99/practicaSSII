@@ -245,6 +245,7 @@ def calculo_sorensen_dice_path(path:list, query):
         listaNoticias.append(item_ponderacion)
     # creamos un results como df para almacenar los resultados
     results = pd.DataFrame(listaNoticias, columns=['Noticia', 'Ponderacion'])
+    results.to_csv('sorensen_coeficients.csv', index=False)
     return listaNoticias
 
 def main():
