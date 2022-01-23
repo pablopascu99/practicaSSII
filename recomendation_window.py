@@ -4,6 +4,9 @@ from busqueda import *
 
 class recomendation():
 
+    '''
+    Funcion que determina la incializacion de la ventana y sus componentes
+    ''' 
     def initRecomendation(self):
         self.recomendacion = []
         self.showNoticiaRec.setReadOnly(True)

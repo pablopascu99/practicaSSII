@@ -74,6 +74,7 @@ class Ui_MainWindow(object):
         self.label_2.setObjectName("label_2")
         self.horizontalLayout_2.addWidget(self.label_2)
         self.filtros = QtWidgets.QTextEdit(self.groupBox)
+        self.filtros.setMaximumSize(QtCore.QSize(16777215, 25))
         self.filtros.setMarkdown("")
         self.filtros.setObjectName("filtros")
         self.horizontalLayout_2.addWidget(self.filtros)
@@ -372,7 +373,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.tabWidget.setCurrentIndex(2)
+        self.tabWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -402,8 +403,8 @@ class Ui_MainWindow(object):
         self.label_8.setText(_translate("MainWindow", "Ranking"))
         self.label_9.setText(_translate("MainWindow", "Noticia"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.similarity), _translate("MainWindow", "Similitud a noticia"))
-        self.groupBox_4.setTitle(_translate("MainWindow", "Opciones de prediccion:"))
-        self.label_15.setText(_translate("MainWindow", "Numero de predicciones:"))
+        self.groupBox_4.setTitle(_translate("MainWindow", "Opciones de recomendación:"))
+        self.label_15.setText(_translate("MainWindow", "Numero de recomendaciones:"))
         self.label_16.setText(_translate("MainWindow", "Medio:"))
         self.comboBox_4.setItemText(0, _translate("MainWindow", "ElPais"))
         self.comboBox_4.setItemText(1, _translate("MainWindow", "20Minutos"))

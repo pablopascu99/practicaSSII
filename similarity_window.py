@@ -3,7 +3,9 @@ from PyQt5.QtWidgets import QTableWidgetItem
 from busqueda import *
 
 class similarity():
-
+    '''
+    Funcion que inicializa la ventana y sus componentes
+    ''' 
     def initSimilarity(self):
         self.similarity = []
         self.lineTexto.setReadOnly(True)

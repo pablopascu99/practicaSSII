@@ -1,7 +1,6 @@
 # imports 
 import requests
 from bs4 import BeautifulSoup
-import pandas as pd
 import re
 
 # Cogemos las urls de la web El Mundo: Sanidad, tecnologia y ciencia
@@ -93,7 +92,6 @@ def getFieldsFromPages (listaURLs):
                 file.write(noticiaElMundo)
                 file.close()
                 cont=cont+1
-                #print(noticiaElMundo)
 
 # llamamos a la funcion con nuestra lista de enlaces creadas
 noticiasElMundo = getFieldsFromPages(listaURLsElMundo)

@@ -2,10 +2,7 @@ from main_window import *
 from similarity_window import *
 from recomendation_window import *
 from busqueda import *
-from PyQt5.QtWidgets import QFileDialog
 from PyQt5.QtWidgets import QTableWidgetItem
-import os
-import pandas as pd
 
 nltk.download('stopwords')
 
@@ -13,7 +10,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow, similarity, recomendation
     def __init__(self, app, *args, **kwargs):
         QtWidgets.QMainWindow.__init__(self, *args, **kwargs)
         self.setupUi(self)
-        #Iniciamos las dos ventanas extra
+        #Iniciamos las dos ventanas complementarias
         self.initSimilarity()
         self.initRecomendation()
         #Establecemos tanto un logo como título del programa
