@@ -11,6 +11,10 @@ import re
 nltk.download('stopwords')
 nltk.download('punkt')
 
+from pytextdist.vector_similarity import sorensen_dice_similarity
+
+
+
 '''
 Funcion que pasa el contenido del fichero de texto a tokens o palabras añadidas a una lista
 '''
@@ -186,9 +190,10 @@ def calculo_sorensen_dice(etiquetas_doc_1, etiquetas_doc_2):
     # vemos las etiquetas ya
     #print('Etiquetas noticia X: ',etiquetas_doc_1)
     #print('Etiquetas query: ',etiquetas_doc_2)
+    sd = sorensen_dice_similarity(etiquetas_doc_1, etiquetas_doc_2, n=1)
+    #sd = textdistance.sorensen(etiquetas_doc_1, etiquetas_doc_2)
+    #print(f"Sorensen Dice Similarity:{sd:.2f}")
     # aplicamos la libreria textdistance para calcular el coeficiente de sorensen dice dados dos strings
-    sd = textdistance.sorensen(etiquetas_doc_1, etiquetas_doc_2)
-    #print(sd)
     return sd
 
 '''

@@ -66,16 +66,18 @@ def getFieldsFromPages (listaURLs):
                 else: 
                     texto = "Noticia premium, sin texto"
                 # Cogemos las etiquetas
-                estructuraEtiquetas = soupNoticia.find('ul', {'class' : 'ue-c-article__tags'})
-                tags=""
-                if estructuraEtiquetas is not None:
+                tags = " "
+                if soupNoticia.find('ul', {'class' : 'ue-c-article__tags'}) is not None:
+                    estructuraEtiquetas = soupNoticia.find('ul', {'class' : 'ue-c-article__tags'})
                     try:
                         childrenEtiquetas = estructuraEtiquetas.findChildren("li" , recursive=False)
                         for childEtiquetas in childrenEtiquetas:
                             tags = tags + childEtiquetas.text + " | "
                     except: 
                         tags = "Noticia sin etiquetas"
-                if estructuraEtiquetas is None:
+                if soupNoticia.find('ul', {'class' : 'ue-c-article__tags'}) is None:
+                    tags = "Noticia sin etiquetas"
+                if tags == " ":
                     tags = "Noticia sin etiquetas"
                 # Cogemos las fechas
                 containerFecha = str(soupNoticia.find('div', {'class':'ue-c-article__publishdate'}))

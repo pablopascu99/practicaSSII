@@ -37,7 +37,7 @@ class recomendation():
         query = query_root.read()
         query_root.close()
 
-        #Realizamos la recomendacion median te sorensen, introduciendo la query y la carpeta a comparar
+        #Realizamos la recomendacion mediante sorensen, introduciendo la query y la carpeta a comparar
         sorensen = calculo_sorensen_dice_path(listaBusqueda, query)
 
         for fichero, sorensen in sorensen:
