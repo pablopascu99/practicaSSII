@@ -250,7 +250,7 @@ def calculo_sorensen_dice_path(path:list, query):
 
 def main():
     # a continuacion se muestran las pruebas realizadas para comprobar el correcto funcionamiento de las funciones anteriores
-    
+    '''
     m = localizar_directorio("ElMundo")
     v = localizar_directorio("20Minutos")
     l=localizar_directorio("ElPais")
@@ -265,6 +265,7 @@ def main():
     
     # obtenemos la similitud de coseno de la query con las noticias del path
     calculo_sorensen_dice_path(m, query).sort_index(axis=0, ascending=False)
+    '''
     
 
 # ejecutamos el main
