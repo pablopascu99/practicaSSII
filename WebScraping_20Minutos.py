@@ -49,6 +49,7 @@ for link in range(len(listaURLs20min)):
             #para ello filtraremos mas de cerca lo que necesitamos
             #posteriormente cogeremos los diferentes parrafos de las noticias
             estructuraTexto = soupNoticia.find('div', {'class':'article-text'}).text
+            estructuraTexto = re.sub('#',' ', estructuraTexto)
 
             #Extraemos los tags de las diferentes noticias
             estructuraEtiquetas = soupNoticia.find('div', {'class' : 'module module-related'})
